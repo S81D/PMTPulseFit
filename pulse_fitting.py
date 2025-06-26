@@ -22,8 +22,9 @@
 # Notes:
 # - Originally 3 reflections + Cholesky decomposition; reduced to 2 reflections with diagonal errors as some of the PMT traces did not include 3 reflections before the pulse end point,
 #   and often times we got large matrix element errors, leading to "blow ups" and very large reflections when generating reconstructed pulses
-# - Laser: lib/R4695_p0_p100_ADCTraces.root
-# - Beam : lib/R5430_ADCTraces.root
+# - Data files containing the ADC traces were too large for github, you can find them here:
+#      * Laser: /pnfs/annie/persistent/users/doran/datasets/PMTPulseFit_ADCTraces/R4695_p0_p100_ADCTraces.root
+#      * Beam : /pnfs/annie/persistent/users/doran/datasets/PMTPulseFit_ADCTraces/R5430_ADCTraces.root
 # - It was noticed that all of the "effective" SPE hits (after hit finding/thresholding)
 #   for certain PMTs are not centered at 1 for the laser data, despite the occupancy (~2%) suggesting
 #   PMTs are only seeing a single photon at a time. These SPE distributions vary on the PMT type.
